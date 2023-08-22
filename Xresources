@@ -1,0 +1,28 @@
+
+gnome.terminal.font: Monospace 13
+i3xrocks.value.font: Monospace 13
+gtk.monospace_font_name: Monospace 13
+gtk.font_name: Monospace 13
+gtk.document_font_name: Monospace 13
+i3-wm.workspace.01.name:	1:<span> </span><span font_desc='Monospace 9'>1: Terminal </span><span foreground='#73d0ff'></span><span> </span>
+i3-wm.workspace.02.name:	2:<span> </span><span font_desc='Monospace 9'>2: Web </span><span foreground='#95e6cb'></span><span> </span>
+i3-wm.workspace.03.name:	3:<span> </span><span font_desc='Monospace 9'>3: Android Studio </span><span foreground='#ffd580'></span><span> </span>
+i3-wm.workspace.04.name:	4:<span> </span><span font_desc='Monospace 9'>4: VSCode </span><span foreground='#bae67e'></span><span> </span>
+i3-wm.workspace.05.name:	5:<span> </span><span font_desc='Monospace 9'>5: Intellij</span><span foreground='#e6b450'></span><span> </span>
+i3-wm.workspace.06.name:	6:<span> </span><span font_desc='Monospace 9'>6: Discord </span><span foreground='#ff3333'></span><span> </span>
+i3-wm.workspace.07.name:	7:<span> </span><span font_desc='Monospace 9'>7: Studying </span><span foreground='#f28779'></span><span> </span>
+i3-wm.workspace.08.name:	8:<span> </span><span font_desc='Monospace 9'>8:Others </span><span foreground='#B48EAD'></span><span> </span>
+i3-wm.workspace.09.name:	9:<span> </span><span font_desc='Monospace 9'>9 </span><span foreground='#e6e1cf'></span><span> </span>
+i3-wm.workspace.10.name:	10:<span> </span><span font_desc=Monospace 9''>Music </span><span foreground='#73d0ff'></span><span> </span>
+i3-wm.workspace.11.name:	11:<span> </span><span font_desc=Monospace 9''>11 </span><span foreground='#95e6cb'></span><span> </span>
+i3-wm.workspace.12.name:	12:<span> </span><span font_desc=Monospace 9''>12 </span><span foreground='#bae67e'></span><span> </span>
+i3-wm.workspace.13.name:	13:<span> </span><span font_desc=Monospace 9''>13 </span><span foreground='#ffd580'></span><span> </span>
+i3-wm.workspace.14.name:	14:<span> </span><span font_desc=Monospace 9''>14 </span><span foreground='#e6b450'></span><span> </span>
+i3-wm.workspace.15.name:	15:<span> </span><span font_desc=Monospace 9''>15 </span><span foreground='#ff3333'></span><span> </span>
+i3-wm.workspace.16.name:	16:<span> </span><span font_desc=Monospace 9''>16 </span><span foreground='#f28779'></span><span> </span>
+i3-wm.workspace.17.name:	17:<span> </span><span font_desc=Monospace 9''>17 </span><span foreground='#B48EAD'></span><span> </span>
+i3-wm.workspace.18.name:	18:<span> </span><span font_desc=Monospace 9''>18 </span><span foreground='#e6e1cf'></span><span> </span>
+i3-wm.workspace.19.name:	19:<span> </span><span font_desc=Monospace 9''>19 </span><span foreground='#73d0ff'></span><span> </span>
+
+!regolith.look.path: /usr/share/regolith-look/blackhole
+regolith.look.path: /usr/share/regolith-look/blackhole
