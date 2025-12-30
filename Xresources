@@ -1,4 +1,5 @@
 
+regolith.sway.unsupported_gpu: true
 gnome.terminal.font: Monospace 13
 i3xrocks.value.font: Monospace 13
 gtk.monospace_font_name: Monospace 13
@@ -7,7 +8,7 @@ gtk.document_font_name: Monospace 13
 wm.workspace.01.name:	1:<span> </span><span font_desc='Monospace 9'>1: Terminal </span><span font_desc='Monospace 11' foreground='#73d0ff'></span><span> </span>
 wm.workspace.02.name:	2:<span> </span><span font_desc='Monospace 9'>2: Web </span><span font_desc='Monospace 11' foreground='#95e6cb'></span><span> </span>
 wm.workspace.03.name:	3:<span> </span><span font_desc='Monospace 9'>3: Android Studio </span><span font_desc='Monospace 11' foreground='#ffd580'></span><span> </span>
-wm.workspace.04.name:	4:<span> </span><span font_desc='Monospace 9'>4: VSCode </span><span font_desc='Monospace 11' foreground='#bae67e'></span><span> </span>
+wm.workspace.04.name:	4:<span> </span><span font_desc='Monospace 9'>4: Code/Cursor </span><span font_desc='Monospace 11' foreground='#bae67e'></span><span> </span>
 wm.workspace.05.name:	5:<span> </span><span font_desc='Monospace 9'>5: Intellij</span><span font_desc='Monospace 11' foreground='#e6b450'></span><span> </span>
 wm.workspace.06.name:	6:<span> </span><span font_desc='Monospace 9'>6: Discord </span><span font_desc='Monospace 11' foreground='#ff3333'></span><span> </span>
 wm.workspace.07.name:	7:<span> </span><span font_desc='Monospace 9'>7: Studying </span><span font_desc='Monospace 11' foreground='#f28779'></span><span> </span>

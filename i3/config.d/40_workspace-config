@@ -129,6 +129,7 @@ assign [class="Google-chrome"] $ws2
 assign [class="jetbrains-studio"] $ws3
 assign [class="Android Emulator - Pixel_XL_API_31:5554"] $ws3
 assign [class="Code"] $ws4
+assign [class="Cursor"] $ws4
 assign [class="jetbrains-idea-ce"] $ws5
 assign [class="jetbrains-idea"] $ws5
 assign [class="init.py"] $ws5
@@ -142,21 +143,34 @@ bindsym $mod+alt+v exec "code"
 bindsym $mod+Shift+Ctrl+s exec /home/keerthan/.screenlayout/laptop_screen.sh
 bindsym $mod+Shift+Ctrl+d exec /home/keerthan/.screenlayout/dual_external.sh
 
-set $dp = DP-0.1.1
-set $hdmi = DP-0.3
+# Define monitors
+set $monitorRight eDP-1
+set $defaultMonitorLeft DP-1-0.1.1  # Adjust as needed for your external monitor
+set $alternateMonitorLeft DP-1-0
 
-#Assign Workspace to displays
-#primary
-workspace "$ws4"  output $dp 
-workspace "$ws5"  output $dp
-workspace "$ws8"  output $dp 
-workspace "$ws10" output $dp
+# Assign the laptop as the right monitor by default
+set $monitorLeft $monitorRight
 
-#secondary
-workspace "$ws1" output $hdmi 
-workspace "$ws2" output $hdmi
-workspace "$ws3" output $hdmi
-workspace "$ws7" output $hdmi 
+# Assign workspaces to displays
+# Workspaces on the right (laptop)
+workspace "$ws1" output $monitorRight
+workspace "$ws2" output $monitorRight
+workspace "$ws3" output $monitorRight
+workspace "$ws7" output $monitorRight
+
+# Workspaces on the left (external monitor, if connected)
+workspace "$ws4" output $monitorLeft
+workspace "$ws5" output $monitorLeft
+workspace "$ws8" output $monitorLeft
+workspace "$ws10" output $monitorLeft
+
+# Keybindings to switch between left and right monitor
+bindsym $mod+$alt+w exec "/home/keerthan/.screenlayout/screen_work.sh && sed -i 's/set \$monitorLeft .*/set \$monitorLeft $defaultMonitorLeft/' ~/.config/i3/config && i3-msg reload && i3-msg restart"
+bindsym $mod+$alt+h exec "/home/keerthan/.screenlayout/screen_home.sh && sed -i 's/set \$monitorLeft .*/set \$monitorLeft $alternateMonitorLeft/' ~/.config/i3/config && i3-msg reload && i3-msg restart"
+
+# When an external monitor is connected, set it to the left
+exec "xrandr --listmonitors | grep -q '1:' || sed -i 's/set \$monitorLeft .*/set \$monitorLeft $defaultMonitorLeft/' ~/.config/i3/config && i3-msg reload && i3-msg restart"
+
 
 bindsym $mod+$alt+Ctrl+Left exec /home/keerthan/.screenlayout/screenrtl.sh
 bindsym $mod+$alt+Ctrl+Right exec /home/keerthan/.screenlayout/screenltr.sh
